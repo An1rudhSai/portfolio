@@ -115,6 +115,13 @@ form button {
   margin: 0;
 }
 
+.projects img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+}
+
 /* Resume */
 .resume section {
   border-top: 1px solid oklch(50% 10% 200 / 40%);
