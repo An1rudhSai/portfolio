@@ -90,3 +90,68 @@ form?.addEventListener('submit', function (event) {
   let url = form.action + '?' + params.join('&');
   location.href = url;
 });
+
+// Lab 4, Step 1.2: load JSON data
+export async function fetchJSON(url) {
+  try {
+    // Fetch the JSON file from the given URL
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch projects: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching or parsing JSON data:', error);
+  }
+}
+
+// Lab 4, Step 1.4: render a list of projects into a container
+const HEADING_LEVELS = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+
+function resolveUrl(path) {
+  // Site-relative paths in projects.json need the base path to work on every page
+  return !path || path.startsWith('http') ? path : BASE_PATH + path;
+}
+
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+  if (!(containerElement instanceof Element)) {
+    console.error('renderProjects: containerElement is not a valid DOM element');
+    return;
+  }
+
+  if (!HEADING_LEVELS.includes(headingLevel)) {
+    console.warn(`renderProjects: invalid heading level "${headingLevel}", using h2`);
+    headingLevel = 'h2';
+  }
+
+  containerElement.innerHTML = '';
+
+  if (!Array.isArray(projects) || projects.length === 0) {
+    containerElement.innerHTML = '<p>No projects to show yet.</p>';
+    return;
+  }
+
+  for (let project of projects) {
+    const article = document.createElement('article');
+    const title = project.title ?? 'Untitled project';
+    const titleHTML = project.url
+      ? `<a href="${resolveUrl(project.url)}">${title}</a>`
+      : title;
+
+    article.innerHTML = `
+      <${headingLevel}>${titleHTML}</${headingLevel}>
+      <img src="${resolveUrl(project.image) || 'https://vis-society.github.io/labs/2/images/empty.svg'}" alt="${title}">
+      <p>${project.description ?? ''}</p>
+    `;
+
+    containerElement.appendChild(article);
+  }
+}
+
+// Lab 4, Step 3.2: GitHub profile data
+export async function fetchGitHubData(username) {
+  return fetchJSON(`https://api.github.com/users/${username}`);
+}

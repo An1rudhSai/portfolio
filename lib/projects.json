@@ -1,0 +1,75 @@
+[
+  {
+    "title": "Persuasive or Deceptive Visualization?",
+    "year": "2026",
+    "image": "project2/final_for.png",
+    "url": "project2/",
+    "description": "DSC 209R Project 2: two opposing visualizations of the same World Bank CO₂ data, arguing for and against the claim that the U.S. is making real progress on cutting emissions."
+  },
+  {
+    "title": "Personal Portfolio Website",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "This site: hand-written HTML, CSS and JavaScript built across the DSC 209R labs, with an automatic navigation menu, dark mode and data-driven project listings."
+  },
+  {
+    "title": "Tile Anomaly Detection",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Fine-tuned a YOLO model in PyTorch to detect defects in tiles with 86% accuracy, then deployed it on edge devices with TensorRT and DeepStream, cutting latency from 2.3s to 1.1s."
+  },
+  {
+    "title": "Firmographic Intelligence Pipeline",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "An LLM and NLP data pipeline that processes 1,000+ market data entries and news feeds daily. Published in IJSREM (DOI: 10.55041/IJSREM49311)."
+  },
+  {
+    "title": "Studybook.AI",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A RAG study assistant built with LangChain, Hugging Face embeddings and FAISS, with multi-model orchestration (OpenAI, Gemini, Perplexity) and automatic fallback."
+  },
+  {
+    "title": "News Headline Sentiment",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Scraped 50K+ headlines with Selenium and fine-tuned BERT on them, reaching 89% accuracy; served through a Flask API with a React front end for interactive visualization."
+  },
+  {
+    "title": "Cyclomatic Complexity Analyzer",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A static analysis tool in C++ that walks Clang’s AST to compute cyclomatic complexity for C#/C++ source files, built with CMake and LLVM."
+  },
+  {
+    "title": "Interactive Visualization (In Progress)",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "DSC 209R Project 3: an interactive D3 visualization built with a team. Coming soon."
+  },
+  {
+    "title": "Lorem Ipsum Dolor Sit",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatem. Dolorum, cumque ab. Nesciunt, iste aut. Placeat iusto officiis provident."
+  },
+  {
+    "title": "Consectetur Adipiscing Elit Sed",
+    "year": "2022",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatem. Dolorum, cumque ab. Nesciunt, iste aut. Placeat iusto officiis provident."
+  },
+  {
+    "title": "Eiusmod Tempor Incididunt Ut",
+    "year": "2022",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatem. Dolorum, cumque ab. Nesciunt, iste aut. Placeat iusto officiis provident."
+  },
+  {
+    "title": "Labore Et Dolore Magna",
+    "year": "2021",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatem. Dolorum, cumque ab. Nesciunt, iste aut. Placeat iusto officiis provident."
+  }
+]
