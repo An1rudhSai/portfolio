@@ -206,8 +206,11 @@ function updateTooltipVisibility(isVisible) {
 
 function updateTooltipPosition(event) {
   const tooltip = document.getElementById('commit-tooltip');
-  tooltip.style.left = `${event.clientX}px`;
-  tooltip.style.top = `${event.clientY}px`;
+  const offset = 12;
+  // Flip to the left of the cursor near the right edge so it isn't cut off
+  const flip = event.clientX + offset + tooltip.offsetWidth > window.innerWidth;
+  tooltip.style.left = `${flip ? event.clientX - offset - tooltip.offsetWidth : event.clientX + offset}px`;
+  tooltip.style.top = `${event.clientY + offset}px`;
 }
 
 // Step 5: brushing
