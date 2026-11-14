@@ -1,5 +1,12 @@
 [
   {
+    "title": "Bikewatching",
+    "year": "2026",
+    "image": "images/bikewatching.jpg",
+    "url": "https://an1rudhsai.github.io/bikewatching/",
+    "description": "Interactive Mapbox + D3 map of about 260,000 Bluebikes trips in Boston and Cambridge (March 2024). Circle size shows station traffic, color shows arrivals vs. departures, and a slider filters by time of day."
+  },
+  {
     "title": "Persuasive or Deceptive Visualization?",
     "year": "2026",
     "image": "project2/final_for.png",
